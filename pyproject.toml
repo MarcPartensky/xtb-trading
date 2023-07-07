@@ -8,7 +8,7 @@ readme = "README.md"
 packages = [{include = "xtb_trading"}]
 
 [tool.poetry.dependencies]
-python = "3.9"
+python = "3.11"
 
 
 [build-system]
