@@ -1,3 +1,5 @@
+publish:
+	poetry publish
 build: export
 	poetry build
 export:
