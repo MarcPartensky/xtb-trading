@@ -14,8 +14,9 @@ client = Client()
 def check_if_market_open():
 
 # CHECK IF MARKET IS OPEN FOR EURUSD
-    client.login("{USER_ID}", "{PASSWORD}", mode={demo,real})
-    client.check_if_market_open([EURUSD])
+    # client.login(USER_ID, PASSWORD, mode="demo")
+    client.login(USER_ID, PASSWORD)
+    client.check_if_market_open("EURUSD")
 
 # # BUY ONE VOLUME (FOR EURUSD THAT CORRESPONDS TO 100000 units)
 # # client.open_trade('buy', EURUSD, 1)

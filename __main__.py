@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 
-from xtb_trading import check_if_market_open
+from xtb_trading import test
 
-check_if_market_open()
+test()

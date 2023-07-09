@@ -11,6 +11,7 @@ packages = [{include = "xtb_trading"}]
 python = "3.11.3"
 xtbapi = "^1.0a7"
 python-dotenv = "^1.0.0"
+xtbclient = "^0.1.2"
 
 
 [build-system]
