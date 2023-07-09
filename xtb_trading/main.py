@@ -1,17 +1,20 @@
 #!/usr/bin/env python
 
 import os
+from dotenv import load_dotenv
 from XTBApi.api import Client
 
+load_dotenv()
 
-def main():
-    USER_ID = os.environ["USER_ID"]
-    PASSWORD = os.environ["PASSWORD"]
+USER_ID = os.environ["USER_ID"]
+PASSWORD = os.environ["PASSWORD"]
 
-    client = Client()
-    client.login("{USER_ID}", "{PASSWORD}", mode={demo,real})
+client = Client()
+
+def check_if_market_open():
 
 # CHECK IF MARKET IS OPEN FOR EURUSD
+    client.login("{USER_ID}", "{PASSWORD}", mode={demo,real})
     client.check_if_market_open([EURUSD])
 
 # # BUY ONE VOLUME (FOR EURUSD THAT CORRESPONDS TO 100000 units)

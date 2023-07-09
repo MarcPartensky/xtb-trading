@@ -10,6 +10,7 @@ packages = [{include = "xtb_trading"}]
 [tool.poetry.dependencies]
 python = "3.11.3"
 xtbapi = "^1.0a7"
+python-dotenv = "^1.0.0"
 
 
 [build-system]
