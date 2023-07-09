@@ -1,3 +1,5 @@
 #!/usr/bin/env python
 
-from xtb_trading import *
+from xtb_trading import main
+
+main()
