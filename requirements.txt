@@ -1,0 +1,5 @@
+websocket-client==1.6.1 ; python_full_version == "3.11.3" \
+    --hash=sha256:c951af98631d24f8df89ab1019fc365f2227c0892f12fd150e935607c79dd0dd \
+    --hash=sha256:f1f9f2ad5291f0225a49efad77abf9e700b6fef553900623060dad6e26503b9d
+xtbapi==1.0a7 ; python_full_version == "3.11.3" \
+    --hash=sha256:05d3ef8a49e3ed502121cffe3ee9e01cc1beddfe01080f9a3f8cd814d14974fa
