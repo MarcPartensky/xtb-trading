@@ -3,14 +3,16 @@
 import os
 from XTBApi.api import Client
 
-USER_ID = os.environ["USER_ID"]
-PASSWORD = os.environ["PASSWORD"]
 
-client = Client()
-client.login("{USER_ID}", "{PASSWORD}", mode={demo,real})
+def main():
+    USER_ID = os.environ["USER_ID"]
+    PASSWORD = os.environ["PASSWORD"]
+
+    client = Client()
+    client.login("{USER_ID}", "{PASSWORD}", mode={demo,real})
 
 # CHECK IF MARKET IS OPEN FOR EURUSD
-client.check_if_market_open([EURUSD])
+    client.check_if_market_open([EURUSD])
 
 # # BUY ONE VOLUME (FOR EURUSD THAT CORRESPONDS TO 100000 units)
 # # client.open_trade('buy', EURUSD, 1)
@@ -24,4 +26,4 @@ client.check_if_market_open([EURUSD])
 # # CLOSE ALL OPEN TRADES
 # client.close_all_trades()
 
-client.logout()
+    client.logout()
