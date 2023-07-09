@@ -1,3 +1,5 @@
+run:
+	python .
 publish:
 	poetry publish
 build: export
